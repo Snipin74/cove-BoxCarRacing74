@@ -2168,7 +2168,7 @@ MonoBehaviour:
   - {fileID: 1530240713}
   respawnDelay: 2
   distanceToCover: 1
-  startRaceImage: {fileID: 0}
+  startRaceImage: {fileID: 2800000, guid: 63b373c2745e4db4482a83a00c756154, type: 3}
   digital1Image: {fileID: 0}
   digital2Image: {fileID: 0}
   digital3Image: {fileID: 0}
