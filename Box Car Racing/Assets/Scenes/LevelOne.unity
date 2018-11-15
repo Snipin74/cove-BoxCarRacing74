@@ -184,6 +184,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 54433868dbcb7d3469bfef103d607a37, type: 2}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: sideOffset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeForwardSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeSidewaysSlip
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ba61d73f4a50747a8163ebfb0d1f21, type: 2}
   m_IsPrefabAsset: 0
@@ -1391,6 +1406,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 882cc54b0b736694e8b6ef29e04a0712, type: 2}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: sideOffset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeForwardSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeSidewaysSlip
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ba61d73f4a50747a8163ebfb0d1f21, type: 2}
   m_IsPrefabAsset: 0
@@ -1537,6 +1567,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 54433868dbcb7d3469bfef103d607a37, type: 2}
+    - target: {fileID: 114408492695587364, guid: 66e92ee2669d08443a9a0e79528b031d,
+        type: 2}
+      propertyPath: maxBrakeTorque
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114408492695587364, guid: 66e92ee2669d08443a9a0e79528b031d,
+        type: 2}
+      propertyPath: speedometer
+      value: 
+      objectReference: {fileID: 2800000, guid: f549577e88b91464c992179cf65c1692, type: 3}
+    - target: {fileID: 114408492695587364, guid: 66e92ee2669d08443a9a0e79528b031d,
+        type: 2}
+      propertyPath: needle
+      value: 
+      objectReference: {fileID: 2800000, guid: 9949ced918b7a3f4bba642fd49a49228, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e92ee2669d08443a9a0e79528b031d, type: 2}
   m_IsPrefabAsset: 0
@@ -1855,6 +1900,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c19d0e0fff4fc1545aecfd0e6b28cd51, type: 2}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: sideOffset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeForwardSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeSidewaysSlip
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ba61d73f4a50747a8163ebfb0d1f21, type: 2}
   m_IsPrefabAsset: 0
@@ -2448,6 +2508,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cac385007d86d954ab2e23983c155634, type: 2}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: sideOffset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeForwardSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeSidewaysSlip
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ba61d73f4a50747a8163ebfb0d1f21, type: 2}
   m_IsPrefabAsset: 0
@@ -2707,6 +2782,21 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0a84927e9a66e3847b71599b2d3d91ca, type: 2}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: sideOffset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeForwardSlip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072361285117960, guid: c9ba61d73f4a50747a8163ebfb0d1f21,
+        type: 2}
+      propertyPath: handbrakeSidewaysSlip
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ba61d73f4a50747a8163ebfb0d1f21, type: 2}
   m_IsPrefabAsset: 0
