@@ -45,8 +45,16 @@ public class CarController1 : MonoBehaviour
     public float forwardOffset;
     public float sideOffset;
 
+    public float countdown;
+
+    private float _time = 0;
+    private bool called = false;
+
+
     void Start()
     {
+
+     
         //so we don't have to search for it every update.
         body = GetComponent<Rigidbody>();
 
@@ -55,9 +63,10 @@ public class CarController1 : MonoBehaviour
 
         //lower center of mass for roll-over resistance
         body.centerOfMass += centerOfMassAdjustment;
-
         //get the waypoints from the track.
         GetWaypoints();
+
+        countdown -= Time.deltaTime;
     }
 
     void SetSlipValues(float forward, float sideways)
@@ -210,27 +219,23 @@ public class CarController1 : MonoBehaviour
 
         ////adjust engine sound
         //EngineSound();
+
+        
     }
 
     private float ForwardRayCast()
     {
         RaycastHit hit;
         Vector3 carFront = transform.position + (transform.forward * forwardOffset);
-        Vector3 carSide = transform.position + (transform.right * sideOffset);
+        
 
-        Debug.DrawRay(carSide, transform.right * breakingDistance);
-
+       
         Debug.DrawRay(carFront, transform.forward * breakingDistance);
 
         //if we detect a car infront of us, slow down or even reverse based on distance.
         if(Physics.Raycast(carFront, transform.forward, out hit, breakingDistance))
         {
             return (((carFront - hit.point).magnitude / breakingDistance) * 2 )  -1;
-        }
-
-        if (Physics.Raycast(carSide, transform.right, out hit, breakingDistance))
-        {
-            return (((carSide - hit.point).magnitude / breakingDistance) * 2) - 1;
         }
 
         //otherwise no change 

@@ -1006,7 +1006,7 @@ MonoBehaviour:
   maxBrakeTorque: 1000
   maxTurnAngle: 25
   maxTorque: 1500
-  decelerationTorque: 500
+  decelerationTorque: 750
   centerOfMassAdjustment: {x: 0, y: -0.9, z: 0}
   spoilerRatio: 0.1
   handbrakeForwardSlip: 0.04
@@ -1025,8 +1025,10 @@ MonoBehaviour:
   brakeLightTex: {fileID: 2800000, guid: c005b76f019328047bc41270cc727534, type: 3}
   reverseLightTex: {fileID: 2800000, guid: c4088ea996e5f564fbf1c0e50d65b04d, type: 3}
   waypointContainer: {fileID: 0}
-  breakingDistance: 6
-  forwardOffset: 0
+  breakingDistance: 15
+  forwardOffset: 6
+  sideOffset: 6
+  countdown: 3
 --- !u!146 &146156443389922830
 WheelCollider:
   m_ObjectHideFlags: 1

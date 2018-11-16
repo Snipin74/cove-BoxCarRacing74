@@ -24,6 +24,8 @@ public class RaceManager : MonoBehaviour {
     private int counterTimerDelay;
     private int countdownTimerStartTime;
 
+    public bool canDrive = false;
+
 
 
     private void Awake()
@@ -37,7 +39,7 @@ public class RaceManager : MonoBehaviour {
         {
             instance = null;
         }
-        countdownTimerReset(1);
+        countdownTimerReset(3);
     }
 
     private void OnGUI()
@@ -81,7 +83,7 @@ public class RaceManager : MonoBehaviour {
     void countdownTimerReset(int delayInSeconds)
     {
         counterTimerDelay = delayInSeconds;
-        //countdownTimerStartTime = Time.time;
+        countdownTimerStartTime = (int) Time.time;
     }
 
     public void LapFinishedByAI(CarController1 script)
@@ -97,6 +99,9 @@ public class RaceManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        StartCoroutine("StartDelay");
+
         respawnTimes = new float[cars.Length];
         distanceLeftToTravel = new float[cars.Length];
         scripts = new CarController1[cars.Length];
@@ -115,7 +120,7 @@ public class RaceManager : MonoBehaviour {
         }
 	}
 
-    // Update is called once per frame
+     // Update is called once per frame
     void Update ()
     {
         //check if cars need a respawn
@@ -123,6 +128,7 @@ public class RaceManager : MonoBehaviour {
         {
             Transform nextWaypoint = scripts[i].GetCurrentWaypoint();
             float distanceCovered = (nextWaypoint.position - cars[i].position).magnitude;
+
             //if the car has moved far enough or is moving to a new waypoint reset its values.
             if(distanceLeftToTravel[i] - distanceToCover > distanceCovered || waypoint[i] != nextWaypoint)
             {

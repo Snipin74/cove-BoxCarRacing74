@@ -213,6 +213,4 @@ public class PlayerCar : MonoBehaviour
         GUIUtility.RotateAroundPivot(rotationAngle, new Vector2(Screen.width - 150, Screen.height));
         GUI.DrawTexture(new Rect(Screen.width - 300, Screen.height - 150, 300, 300), needle);
     }
-
-
 }
